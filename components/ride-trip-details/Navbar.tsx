@@ -67,7 +67,7 @@ export function Navbar({ onReset }: NavbarProps) {
           <div className="flex items-center gap-4">
             <div className="flex items-center gap-2 text-xs font-semibold text-neutral-700 bg-neutral-100 px-3.5 py-1.5 rounded-full border border-neutral-200/60">
               <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-              <span>Tesla Model X en route</span>
+              <span>CyberEV Model X en route</span>
             </div>
             <button
               onClick={onReset}

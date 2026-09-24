@@ -91,7 +91,7 @@ export default function RideTripDetailsPage() {
             {/* Driver Profile Card */}
             <DriverCard
               name="Lara Larsson"
-              vehicle="Tesla Model X • Gray"
+              vehicle="CyberEV Model X • Gray"
               rating="4.9"
               totalRides={120}
               plate="ABC 432 KJ"
@@ -170,7 +170,7 @@ export default function RideTripDetailsPage() {
         isOpen={isCalling}
         onClose={() => setIsCalling(false)}
         driverName="Lara Larsson"
-        vehicle="Tesla Model X"
+        vehicle="CyberEV Model X"
         plate="ABC 432 KJ"
       />
 

@@ -36,7 +36,7 @@ export function HeadlineSection({
 
               {/* 3D Elevated Overlapping Colorful App Tiles */}
               <span className="inline-flex items-center align-middle px-1">
-                {/* 1. Colorful Dribbble Ball Tile */}
+                {/* 1. Colorful Creative Sphere Tile (Lookalike placeholder) */}
                 <motion.span
                   whileHover={{ y: -5, rotate: -10, scale: 1.15, zIndex: 30 }}
                   transition={{ type: "spring", stiffness: 400, damping: 20 }}
@@ -45,32 +45,32 @@ export function HeadlineSection({
                   <svg viewBox="0 0 32 32" className="w-7 h-7 sm:w-8 sm:h-8">
                     {/* Vibrant Solid Magenta-Pink Circle */}
                     <circle cx="16" cy="16" r="14" fill="#E8308A" />
-                    {/* Darker Seam Lines matching reference */}
+                    {/* Elegant Lookalike Spiral Curves */}
                     <path
-                      d="M 4.5 10.5 C 11.5 12.5, 19.5 10.5, 27 6"
+                      d="M 6 12 C 12 14, 18 12, 26 8"
                       fill="none"
                       stroke="#881337"
-                      strokeWidth="1.9"
+                      strokeWidth="2"
                       strokeLinecap="round"
                     />
                     <path
-                      d="M 6.5 23.5 C 11 16, 20 15, 27.5 16"
+                      d="M 7 22 C 12 17, 19 16, 26 17"
                       fill="none"
                       stroke="#881337"
-                      strokeWidth="1.9"
+                      strokeWidth="2"
                       strokeLinecap="round"
                     />
                     <path
-                      d="M 12 3 C 14 12, 17.5 20, 20.5 29"
+                      d="M 13 5 C 15 13, 18 20, 20 27"
                       fill="none"
                       stroke="#881337"
-                      strokeWidth="1.9"
+                      strokeWidth="2"
                       strokeLinecap="round"
                     />
                   </svg>
                 </motion.span>
 
-                {/* 2. Vibrant Royal Blue Behance Tile (Overlapping) */}
+                {/* 2. Vibrant Royal Blue Creative Studio Tile (Lookalike placeholder) */}
                 <motion.span
                   whileHover={{ y: -5, rotate: 0, scale: 1.15, zIndex: 30 }}
                   transition={{ type: "spring", stiffness: 400, damping: 20 }}
@@ -78,19 +78,21 @@ export function HeadlineSection({
                 >
                   <svg viewBox="0 0 40 32" className="w-7 h-7 sm:w-8 sm:h-8" fill="#0057FF">
                     <rect x="23" y="6" width="11" height="2.8" rx="1.2" />
-                    <path d="M 6 6 L 15 6 C 18 6, 20 7.5, 20 9.8 C 20 11.2, 19.2 12.2, 18 12.8 C 19.6 13.5, 20.6 14.8, 20.6 16.6 C 20.6 19.2, 18.2 21, 15 21 L 6 21 Z M 10.5 9.2 L 10.5 12 L 14.2 12 C 15.2 12, 16 11.4, 16 10.6 C 16 9.8, 15.2 9.2, 14.2 9.2 Z M 10.5 15 L 10.5 18 L 14.5 18 C 15.6 18, 16.4 17.3, 16.4 16.5 C 16.4 15.7, 15.6 15, 14.5 15 Z" />
-                    <path d="M 28.5 11 C 24.5 11, 22 13.5, 22 17 C 22 20.5, 24.5 22.8, 28.5 22.8 C 31.5 22.8, 33.5 21.4, 34.2 19.2 L 31.2 19.2 C 30.8 20, 29.8 20.5, 28.5 20.5 C 26.5 20.5, 25.2 19.2, 25.1 17.5 L 34.8 17.5 C 34.9 17.2, 35 16.8, 35 16.4 C 35 13.2, 32.5 11, 28.5 11 Z M 25.2 15.5 C 25.5 14, 26.8 13, 28.5 13 C 30.2 13, 31.4 14, 31.7 15.5 Z" />
+                    {/* Lookalike 'Cr' Lettermark */}
+                    <path d="M 18 11.5 C 17 9.5, 14.5 8, 12 8 C 8 8, 5 11, 5 16 C 5 21, 8 24, 12 24 C 14.5 24, 17 22.5, 18 20.5 L 14.5 19 C 14 20, 13 20.8, 12 20.8 C 9.8 20.8, 8.2 18.8, 8.2 16 C 8.2 13.2, 9.8 11.2, 12 11.2 C 13 11.2, 14 12, 14.5 13 Z" />
+                    <path d="M 23 11 L 26.5 11 L 26.5 13.5 C 27.5 11.8, 29.5 11, 31.5 11 L 31.5 14.5 C 31 14.3, 30.2 14.2, 29.5 14.2 C 27.8 14.2, 26.5 15.5, 26.5 17.5 L 26.5 24 L 23 24 Z" />
                   </svg>
                 </motion.span>
 
-                {/* 3. Bold Black Miro Tile (Overlapping) */}
+                {/* 3. Bold Black Geometric Tile (Lookalike placeholder) */}
                 <motion.span
                   whileHover={{ y: -5, rotate: 14, scale: 1.15, zIndex: 30 }}
                   transition={{ type: "spring", stiffness: 400, damping: 20 }}
                   className="w-11 h-11 sm:w-13 sm:h-13 rounded-2xl sm:rounded-3xl bg-white shadow-[0_12px_24px_-4px_rgba(0,0,0,0.18)] border border-zinc-100 flex items-center justify-center transform rotate-8 -translate-x-4 cursor-pointer relative z-10"
                 >
                   <svg viewBox="0 0 32 32" className="w-6 h-6 sm:w-7 sm:h-7" fill="#09090B">
-                    <path d="M 6.5 22.5 L 10.5 9 L 14 9 L 11.2 16.5 L 15.5 9 L 19 9 L 16.2 16.5 L 20.5 9 L 24 9 L 19.8 22.5 L 16.5 22.5 L 19.2 15 L 15 22.5 L 11.5 22.5 L 14.2 15 L 10 22.5 Z" />
+                    {/* Modern 4-pillar angled geometry */}
+                    <path d="M 5 21 L 9 8 L 12.5 8 L 10 21 Z M 11.5 21 L 15.5 8 L 19 8 L 16.5 21 Z M 18 21 L 22 8 L 25.5 8 L 23 21 Z" />
                   </svg>
                 </motion.span>
               </span>

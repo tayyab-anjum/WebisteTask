@@ -1,36 +1,112 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Tayyab UI — 7 Pixel-Accurate Web Application Showcase
 
-## Getting Started
+A high-performance collection of **7 pixel-accurate modern web applications and landing pages** recreated from UI reference designs. Built using **Next.js (App Router)**, **TypeScript**, **Tailwind CSS v4**, and **Framer Motion**.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🚀 Live Deployment & Links
+
+- **Live Public URL**: [https://webiste-task.vercel.app/](https://webiste-task.vercel.app/)
+- **GitHub Repository**: [https://github.com/tayyab-anjum/WebisteTask](https://github.com/tayyab-anjum/WebisteTask)
+
+---
+
+## 📱 The 7 Showcase Websites
+
+All 7 sites can be explored directly from the interactive main hub at [webiste-task.vercel.app](https://webiste-task.vercel.app/) or locally at `http://localhost:3000`:
+
+| # | Route | Project Name | Live Demo Link | Description & Visual Theme |
+|---|---|---|---|---|
+| **01** | `/ride-trip-details` | **Ride-Share Trip Details** | [View Live Demo](https://webiste-task.vercel.app/ride-trip-details) | Dark mobility UI with live interactive route canvas, vehicle battery/telemetry metrics, driver card, and fare-split modal. |
+| **02** | `/art-showcase` | **Art Showcase Landing** | [View Live Demo](https://webiste-task.vercel.app/art-showcase) | Curated editorial fine art gallery featuring 7 interactive fanned cards, artist profile, and exhibition membership modal. |
+| **03** | `/travel-landing` | **Travel App Landing** | [View Live Demo](https://webiste-task.vercel.app/travel-landing) | Atmospheric high-altitude cloudscape backdrop, floating destination cards, booking search, and interactive flight radar. |
+| **04** | `/finance-landing` | **Finance Dashboard Landing** | [View Live Demo](https://webiste-task.vercel.app/finance-landing) | Ultra-clean dark fintech interface, real-time spending telemetry chart, virtual card preview, and instant transfer modal. |
+| **05** | `/real-estate-landing` | **Real Estate Investment** | [View Live Demo](https://webiste-task.vercel.app/real-estate-landing) | Full-width architectural property canvas with interactive pins, scattered property spotlights, and value proposition bento grid. |
+| **06** | `/pricing-plans` | **Pricing & Plans** | [View Live Demo](https://webiste-task.vercel.app/pricing-plans) | 3D annual discount toggle, authentic colorful creative app badges, equalized pricing cards, and centered FAQ accordion. |
+| **07** | `/developer-portfolio` | **Developer Portfolio (Tayyab)** | [View Live Demo](https://webiste-task.vercel.app/developer-portfolio) | Realistic 3D iPhone mockup with Apple notch, speaker receiver, home bar, celestial orbit rings, and live light/dark theme switch. |
+
+---
+
+## 🎨 Design Philosophy & Original Placeholder Branding
+
+In accordance with frontend fidelity standards and trademark rules:
+- **No copied trademarks**: All corporate partner and brand logos are replaced with **original, high-aesthetic lookalike placeholder brands** that preserve the exact layout, visual weight, and typography:
+  - `Velo` (Mobility lookalike)
+  - `Haven` (Real estate lookalike with architectural roof glyph)
+  - `Prism` (Collaborative canvas lookalike with geometric mark)
+  - `Orbit` (Search & cloud lookalike)
+  - `Drop` (Content platform lookalike with water droplet badge)
+  - `DEV` (Developer ecosystem lookalike)
+  - `Sync` (Telemetry & Git integration)
+  - `CyberEV` (Lookalike EV vehicle in mobility app)
+  - `Creative Studio Badges` (Original lookalike design & studio icons in pricing)
+- **High-Fidelity Assets**: Photographic villa architecture, high-altitude cloudscapes, editorial art, and developer portrait avatars.
+- **Full-Screen Expansive Layout**: Designed for authentic production websites with `max-w-[1500px]` containers and responsive mobile breakpoints (375px+).
+
+---
+
+## 🛠️ Architecture & Tech Stack
+
+- **Framework**: [Next.js](https://nextjs.org/) (App Router, Server Components + Client Interactivity)
+- **Language**: [TypeScript](https://www.typescriptlang.org/) (Strict type-safety across all routes)
+- **Styling**: [Tailwind CSS v4](https://tailwindcss.com/)
+- **Animations**: [Framer Motion](https://www.framer.com/motion/)
+- **Icons**: [Lucide React](https://lucide.dev/) & Hand-crafted SVG Vectors
+
+```
+tayyab/
+├── app/
+│   ├── page.tsx                     # 7-card interactive showcase hub
+│   ├── layout.tsx                   # Dynamic metadata & Geist font family
+│   ├── ride-trip-details/           # Design 1 (+ layout.tsx with custom metadata)
+│   ├── art-showcase/                # Design 2 (+ layout.tsx with custom metadata)
+│   ├── travel-landing/              # Design 3 (+ layout.tsx with custom metadata)
+│   ├── finance-landing/             # Design 4 (+ layout.tsx with custom metadata)
+│   ├── real-estate-landing/         # Design 5 (+ layout.tsx with custom metadata)
+│   ├── pricing-plans/               # Design 6 (+ layout.tsx with custom metadata)
+│   └── developer-portfolio/         # Design 7 (+ layout.tsx with custom metadata)
+├── components/                      # Isolated components for each design
+│   ├── ride-trip-details/
+│   ├── art-showcase/
+│   ├── travel-landing/
+│   ├── finance-landing/
+│   ├── real-estate-landing/
+│   ├── pricing-plans/
+│   └── developer-portfolio/
+├── designs/                         # 7 original UI reference images
+├── public/                          # Optimized imagery (villas, clouds, art, avatars)
+└── websites/                        # Detailed architectural documentation
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 💻 Local Setup & Development
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/tayyab-anjum/WebisteTask.git
+   cd WebisteTask
+   ```
 
-## Learn More
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+3. **Start the local server**:
+   ```bash
+   npm run dev
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+4. **Open in browser**:
+   Visit [http://localhost:3000](http://localhost:3000) to view the Showcase Hub.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🌐 Instant Vercel Deployment
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Deploy directly to Vercel in 1 click:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Import this repository at [https://vercel.com/new](https://vercel.com/new).
+2. Select `Next.js` (detected automatically).
+3. Click **Deploy**.
