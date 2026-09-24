@@ -19,13 +19,17 @@ export function Navbar({ onOpenLogin, onOpenPricing }: NavbarProps) {
       <nav className="bg-white/20 hover:bg-white/25 backdrop-blur-xl border border-white/30 rounded-full px-5 sm:px-7 py-2 sm:py-2.5 shadow-[0_8px_32px_0_rgba(0,0,0,0.12)] flex items-center justify-between gap-5 sm:gap-9 transition-colors select-none">
         {/* Brand Logo & Name */}
         <div className="flex items-center gap-2 cursor-pointer group">
-          {/* Dual Orb Capsule Logo */}
-          <div className="relative flex items-center">
-            <div className="w-4 h-4 rounded-full bg-white shadow-sm" />
-            <div className="w-4 h-4 rounded-full bg-white/60 -ml-2" />
+          {/* SkyHop Flight Glyph */}
+          <div className="w-5 h-5 flex items-center justify-center text-white group-hover:scale-110 transition-transform">
+            <svg
+              className="w-4.5 h-4.5 fill-current"
+              viewBox="0 0 24 24"
+            >
+              <path d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z" />
+            </svg>
           </div>
           <span className="text-white font-bold text-[16px] sm:text-[17px] tracking-tight">
-            Capsule
+            SkyHop
           </span>
         </div>
 
@@ -187,7 +191,7 @@ export function Navbar({ onOpenLogin, onOpenPricing }: NavbarProps) {
               }}
               className="w-full mt-2 py-3 bg-sky-600 hover:bg-sky-700 text-white rounded-2xl font-semibold text-sm transition-colors text-center"
             >
-              Sign In to Capsule
+              Sign In to SkyHop
             </button>
           </motion.div>
         )}

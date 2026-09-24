@@ -33,10 +33,13 @@ export function Navbar({
         <div className="flex items-center gap-8 lg:gap-12">
           <div
             onClick={() => handleNavClick("Features")}
-            className="flex items-center gap-2 cursor-pointer group"
+            className="flex items-center gap-2.5 cursor-pointer group"
           >
+            <div className="w-7 h-7 rounded-lg bg-zinc-950 flex items-center justify-center text-white text-xs font-mono font-bold">
+              &gt;_
+            </div>
             <span className="text-2xl font-black tracking-tight text-zinc-950 font-sans group-hover:opacity-80 transition-opacity">
-              Stage
+              DevOrbit
             </span>
           </div>
 

@@ -14,37 +14,26 @@ export function Navbar({ onReset }: NavbarProps) {
       <header className="hidden md:flex border-b border-neutral-200/80 bg-white/95 sticky top-0 z-30 backdrop-blur-md px-6 lg:px-12 py-3.5 items-center justify-between">
         <div className="flex items-center gap-8 max-w-7xl mx-auto w-full justify-between">
           <div className="flex items-center gap-8">
-            {/* Bunny logo + Drive name */}
+            {/* Mobility Velocity Logo + Glide Name */}
             <div className="flex items-center gap-2.5 select-none cursor-pointer">
-              <svg
-                className="w-8 h-8 text-[#18181B]"
-                viewBox="0 0 36 36"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <ellipse cx="18" cy="27" rx="14" ry="4" fill="#18181B" />
-                <path
-                  d="M13 14C11.5 14 10.5 16 10.5 18.5V24.5C11.5 25.8 13.5 26.5 18 26.5C22.5 26.5 24.5 25.8 25.5 24.5V18.5C25.5 16 24.5 14 23 14C21.8 14 21 15.2 20.8 17.5V20.5H15.2V17.5C15 15.2 14.2 14 13 14Z"
-                  fill="white"
-                  stroke="#18181B"
-                  strokeWidth="2.4"
-                  strokeLinejoin="round"
-                />
-                <path
-                  d="M12.5 14V7.5C12.5 5.5 13.5 4.5 14.5 4.5C15.5 4.5 16.5 5.5 16.5 7.5V14.5M23.5 14V7.5C23.5 5.5 22.5 4.5 21.5 4.5C20.5 4.5 19.5 5.5 19.5 7.5V14.5"
-                  fill="white"
-                  stroke="#18181B"
-                  strokeWidth="2.4"
+              <div className="w-8 h-8 rounded-xl bg-[#18181B] flex items-center justify-center text-white shadow-xs">
+                <svg
+                  className="w-4.5 h-4.5 text-white"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2.5"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                />
-                <circle cx="15.5" cy="21" r="1.3" fill="#18181B" />
-                <circle cx="20.5" cy="21" r="1.3" fill="#18181B" />
-                <circle cx="18" cy="23" r="0.9" fill="#18181B" />
-              </svg>
+                >
+                  <path d="M4.5 16.5c1-2.5 3.5-4.5 7.5-4.5s6.5 2 7.5 4.5" />
+                  <circle cx="12" cy="7" r="3" fill="currentColor" stroke="none" />
+                  <path d="M2 12h3M19 12h3" />
+                </svg>
+              </div>
 
               <span className="font-extrabold text-[23px] tracking-tight text-[#18181B]">
-                Drive
+                Glide
               </span>
             </div>
 
@@ -83,35 +72,24 @@ export function Navbar({ onReset }: NavbarProps) {
       {/* Mobile Top Navigation */}
       <div className="md:hidden flex items-center justify-between py-2 px-5">
         <div className="flex items-center gap-2 select-none">
-          <svg
-            className="w-8 h-8 text-[#18181B]"
-            viewBox="0 0 36 36"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <ellipse cx="18" cy="27" rx="14" ry="4" fill="#18181B" />
-            <path
-              d="M13 14C11.5 14 10.5 16 10.5 18.5V24.5C11.5 25.8 13.5 26.5 18 26.5C22.5 26.5 24.5 25.8 25.5 24.5V18.5C25.5 16 24.5 14 23 14C21.8 14 21 15.2 20.8 17.5V20.5H15.2V17.5C15 15.2 14.2 14 13 14Z"
-              fill="white"
-              stroke="#18181B"
-              strokeWidth="2.4"
-              strokeLinejoin="round"
-            />
-            <path
-              d="M12.5 14V7.5C12.5 5.5 13.5 4.5 14.5 4.5C15.5 4.5 16.5 5.5 16.5 7.5V14.5M23.5 14V7.5C23.5 5.5 22.5 4.5 21.5 4.5C20.5 4.5 19.5 5.5 19.5 7.5V14.5"
-              fill="white"
-              stroke="#18181B"
-              strokeWidth="2.4"
+          <div className="w-7 h-7 rounded-xl bg-[#18181B] flex items-center justify-center text-white shadow-xs">
+            <svg
+              className="w-4 h-4 text-white"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2.5"
               strokeLinecap="round"
               strokeLinejoin="round"
-            />
-            <circle cx="15.5" cy="21" r="1.3" fill="#18181B" />
-            <circle cx="20.5" cy="21" r="1.3" fill="#18181B" />
-            <circle cx="18" cy="23" r="0.9" fill="#18181B" />
-          </svg>
+            >
+              <path d="M4.5 16.5c1-2.5 3.5-4.5 7.5-4.5s6.5 2 7.5 4.5" />
+              <circle cx="12" cy="7" r="3" fill="currentColor" stroke="none" />
+              <path d="M2 12h3M19 12h3" />
+            </svg>
+          </div>
 
-          <span className="font-extrabold text-[23px] tracking-tight text-[#18181B]">
-            Drive
+          <span className="font-extrabold text-[22px] tracking-tight text-[#18181B]">
+            Glide
           </span>
         </div>
 

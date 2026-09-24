@@ -34,14 +34,21 @@ export function Navbar({
           onClick={() => handleNavClick("Home")}
           className="flex items-center gap-3 cursor-pointer group"
         >
-          {/* Ascending 3-pillar architectural / bar icon */}
-          <div className="flex items-end gap-[3.5px] h-6 w-6">
-            <span className="w-1.5 h-3 bg-zinc-950 rounded-xs group-hover:bg-zinc-700 transition-colors" />
-            <span className="w-1.5 h-4.5 bg-zinc-950 rounded-xs group-hover:bg-zinc-700 transition-colors" />
-            <span className="w-1.5 h-6 bg-zinc-950 rounded-xs group-hover:bg-zinc-700 transition-colors" />
+          {/* Architectural Villa Mark */}
+          <div className="w-7 h-7 flex items-center justify-center text-zinc-950 group-hover:scale-105 transition-transform">
+            <svg
+              className="w-6 h-6 fill-none stroke-current"
+              viewBox="0 0 24 24"
+              strokeWidth="2.3"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path d="M3 10l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+              <polyline points="9 22 9 12 15 12 15 22" />
+            </svg>
           </div>
           <span className="text-2xl font-black tracking-tight text-zinc-950 font-sans">
-            Brickwise
+            TerraVest
           </span>
         </div>
 

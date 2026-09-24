@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Workflow Pricing & Plans",
+  title: "SyncCraft — Pricing & Plans",
   description: "Simple, transparent pricing for modern creators and engineering workflows.",
 };
 

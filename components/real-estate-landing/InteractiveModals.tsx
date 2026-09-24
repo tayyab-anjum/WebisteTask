@@ -294,7 +294,7 @@ export function JoinModal({ isOpen, onClose }: JoinModalProps) {
         {joined ? (
           <div className="py-8 flex flex-col items-center text-center">
             <CheckCircle2 className="w-12 h-12 text-emerald-600 mb-3" />
-            <h3 className="text-xl font-bold text-zinc-950">Welcome to Brickwise!</h3>
+            <h3 className="text-xl font-bold text-zinc-950">Welcome to TerraVest!</h3>
             <p className="text-xs text-zinc-500 mt-1">
               Check your inbox to verify your accredited investor account.
             </p>
@@ -305,7 +305,7 @@ export function JoinModal({ isOpen, onClose }: JoinModalProps) {
               <Building className="w-5 h-5" />
             </div>
             <h3 className="text-2xl font-black text-zinc-950 tracking-tight">
-              Join Brickwise
+              Join TerraVest
             </h3>
             <p className="text-xs text-zinc-500 mt-1">
               Start building a fractional real estate portfolio with high-yield US properties.
@@ -375,7 +375,7 @@ export function WhatIsArrivedModal({ isOpen, onClose }: WhatIsArrivedModalProps)
             Traditionally, purchasing residential rental homes and oceanfront villas required hundreds of thousands of dollars in down payments, mortgages, and tenant management.
           </p>
           <p>
-            With <strong>Brickwise</strong>, properties are securitized into fractional shares starting as low as $500. You earn proportional rental income directly deposited each month, plus benefit from long-term property appreciation.
+            With <strong>TerraVest</strong>, properties are securitized into fractional shares starting as low as $500. You earn proportional rental income directly deposited each month, plus benefit from long-term property appreciation.
           </p>
           <div className="bg-[#F8FAFC] p-3.5 rounded-2xl border border-zinc-100 flex items-start gap-3">
             <ShieldCheck className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />

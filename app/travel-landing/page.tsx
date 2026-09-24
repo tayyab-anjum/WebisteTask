@@ -56,7 +56,7 @@ export default function TravelLandingPage() {
 
       {/* Minimal Footer */}
       <footer className="w-full py-2.5 sm:py-3 text-center text-xs text-white/60 select-none border-t border-white/10 relative z-10">
-        <p>© 2026 Capsule Inc. All rights reserved. Travel with confidence.</p>
+        <p>© 2026 SkyHop Inc. All rights reserved. Travel with confidence.</p>
       </footer>
 
       {/* Interactive Modals */}

@@ -11,13 +11,20 @@ export function Footer() {
           {/* Brand Info */}
           <div className="md:col-span-4 flex flex-col items-start">
             <div className="flex items-center gap-2.5">
-              <div className="flex items-end gap-[3px] h-5 w-5">
-                <span className="w-1.5 h-2.5 bg-zinc-950 rounded-xs" />
-                <span className="w-1.5 h-4 bg-zinc-950 rounded-xs" />
-                <span className="w-1.5 h-5 bg-zinc-950 rounded-xs" />
+              <div className="w-5 h-5 flex items-center justify-center text-zinc-950">
+                <svg
+                  className="w-5 h-5 fill-none stroke-current"
+                  viewBox="0 0 24 24"
+                  strokeWidth="2.3"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M3 10l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                  <polyline points="9 22 9 12 15 12 15 22" />
+                </svg>
               </div>
               <span className="text-xl font-bold tracking-tight text-zinc-950">
-                Brickwise
+                TerraVest
               </span>
             </div>
             <p className="text-xs text-zinc-500 leading-relaxed mt-3.5 max-w-xs">
@@ -45,7 +52,7 @@ export function Footer() {
                 Company
               </div>
               <ul className="space-y-2 text-xs text-zinc-500 font-medium">
-                <li><a href="#about" className="hover:text-zinc-950 transition-colors">About Brickwise</a></li>
+                <li><a href="#about" className="hover:text-zinc-950 transition-colors">About TerraVest</a></li>
                 <li><a href="#team" className="hover:text-zinc-950 transition-colors">Leadership & Partners</a></li>
                 <li><a href="#careers" className="hover:text-zinc-950 transition-colors">Careers</a></li>
                 <li><a href="#press" className="hover:text-zinc-950 transition-colors">Press & Media</a></li>

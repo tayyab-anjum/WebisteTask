@@ -42,7 +42,7 @@ export default function ArtShowcasePage() {
 
       {/* Clean Minimalist Footer */}
       <footer className="w-full py-6 text-center text-xs text-neutral-400 select-none border-t border-neutral-100">
-        <p>© 2026 Pallet Ross Inc. All rights reserved.</p>
+        <p>© 2026 AuraArt Inc. All rights reserved.</p>
       </footer>
 
       {/* Modals */}

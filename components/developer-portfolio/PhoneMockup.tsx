@@ -104,7 +104,7 @@ export function PhoneMockup() {
                 }`}
               >
                 I&apos;m Tayyab, a software designer and entrepreneur based in New York
-                City. I&apos;m currently working on a new project called Stage.
+                City. I&apos;m currently working on a new project called DevOrbit.
               </p>
 
               {/* Social Media Links Row */}

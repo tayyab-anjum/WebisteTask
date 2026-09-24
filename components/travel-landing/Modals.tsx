@@ -51,7 +51,7 @@ export function LoginModal({ isOpen, onClose }: LoginModalProps) {
             </div>
 
             <h3 className="text-xl font-bold text-zinc-900">
-              Welcome to Capsule
+              Welcome to SkyHop
             </h3>
             <p className="text-xs text-zinc-500 mt-1 mb-6">
               Access your synced flights, passports & itineraries.
@@ -79,7 +79,7 @@ export function LoginModal({ isOpen, onClose }: LoginModalProps) {
             </form>
 
             <div className="mt-4 pt-4 border-t border-zinc-100 text-[11px] text-zinc-400">
-              By continuing you agree to Capsule Terms of Service.
+              By continuing you agree to SkyHop Terms of Service.
             </div>
           </motion.div>
         </motion.div>

@@ -18,14 +18,21 @@ export function Navbar({ onOpenLogin, onOpenGetStarted }: NavbarProps) {
       <div className="max-w-[1460px] mx-auto px-6 sm:px-10 lg:px-16 h-22 flex items-center justify-between">
         {/* Brand Logo & Name */}
         <div className="flex items-center gap-2.5 cursor-pointer">
-          {/* FinSuite Wallet Icon */}
-          <div className="w-8 h-8 rounded-xl bg-gradient-to-tr from-sky-600 to-blue-500 shadow-sm flex items-center justify-center p-1.5 relative overflow-hidden">
-            {/* Wallet slit and card edge */}
-            <div className="w-full h-2.5 bg-white/30 rounded-xs mb-1" />
-            <div className="absolute w-2 h-2 rounded-full bg-white/90 right-1.5 bottom-2 shadow-xs" />
+          {/* ApexVault Shield / Hexagon Icon */}
+          <div className="w-8 h-8 rounded-xl bg-gradient-to-tr from-blue-600 to-cyan-500 shadow-sm flex items-center justify-center text-white">
+            <svg
+              className="w-4.5 h-4.5 fill-none stroke-current"
+              viewBox="0 0 24 24"
+              strokeWidth="2.4"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path d="M12 2L3 7v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-9-5z" />
+              <path d="M9 12l2 2 4-4" />
+            </svg>
           </div>
           <span className="font-extrabold text-[20px] text-zinc-950 tracking-tight">
-            FinSuite
+            ApexVault
           </span>
         </div>
 

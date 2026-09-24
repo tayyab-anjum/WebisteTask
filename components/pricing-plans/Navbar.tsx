@@ -17,7 +17,7 @@ export function Navbar({ onScheduleCall }: NavbarProps) {
             ✦
           </div>
           <span className="font-extrabold text-xl text-zinc-950 tracking-tight font-sans">
-            Workflow
+            SyncCraft
           </span>
         </div>
 

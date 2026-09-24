@@ -50,7 +50,7 @@ export function AddDocumentModal({ isOpen, onClose }: AddDocumentModalProps) {
               Add Your Stuff
             </h3>
             <p className="text-xs text-zinc-500 mt-1 mb-5">
-              Sync documents, boarding passes, or bookings directly into Capsule.
+              Sync documents, boarding passes, or bookings directly into SkyHop.
             </p>
 
             {/* Type Selector */}
@@ -115,10 +115,10 @@ export function AddDocumentModal({ isOpen, onClose }: AddDocumentModalProps) {
                 {isSaved ? (
                   <>
                     <CheckCircle2 className="w-4 h-4 text-emerald-400" />
-                    <span>Added to Capsule!</span>
+                    <span>Added to SkyHop!</span>
                   </>
                 ) : (
-                  <span>Add to Capsule</span>
+                  <span>Add to SkyHop</span>
                 )}
               </button>
             </form>

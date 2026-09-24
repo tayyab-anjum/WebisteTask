@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Art Showcase Landing",
+  title: "AuraArt — Modern Art Showcase",
   description: "Curated modern editorial art gallery showcasing global contemporary masters.",
 };
 

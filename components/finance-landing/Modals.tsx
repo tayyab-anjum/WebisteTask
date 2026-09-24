@@ -278,7 +278,7 @@ export function GetStartedModal({ isOpen, onClose }: ModalProps) {
               <X className="w-5 h-5" />
             </button>
 
-            <h3 className="text-2xl font-bold text-zinc-950">Start with FinSuite</h3>
+            <h3 className="text-2xl font-bold text-zinc-950">Start with ApexVault</h3>
             <p className="text-xs text-zinc-500 mt-1 mb-6">
               Create your financial management account in under 2 minutes.
             </p>

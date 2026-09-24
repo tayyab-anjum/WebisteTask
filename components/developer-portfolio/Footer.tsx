@@ -7,9 +7,12 @@ export function Footer() {
     <footer className="w-full border-t border-zinc-200/80 py-12 bg-white select-none">
       <div className="max-w-[1500px] mx-auto px-6 sm:px-10 lg:px-16 flex flex-col sm:flex-row items-center justify-between gap-6">
         {/* Brand */}
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-2.5">
+          <div className="w-6 h-6 rounded-md bg-zinc-950 flex items-center justify-center text-white text-[10px] font-mono font-bold">
+            &gt;_
+          </div>
           <span className="text-xl font-black tracking-tight text-zinc-950 font-sans">
-            Stage
+            DevOrbit
           </span>
           <span className="text-xs text-zinc-400 font-medium">
             — The API-based developer portfolio

@@ -20,45 +20,36 @@ export function Navbar() {
 
   return (
     <nav className="w-full max-w-7xl mx-auto px-6 lg:px-12 py-6 flex items-center justify-between relative z-30 select-none">
-      {/* Brand Logo: Pallet Ross */}
+      {/* Brand Logo: AuraArt */}
       <div className="flex items-center gap-3 cursor-pointer group">
-        {/* Mint / Teal Origami Pinwheel Logo */}
+        {/* Mint / Teal Art Prism Logo */}
         <div className="w-8 h-8 relative flex items-center justify-center">
           <svg
-            className="w-7 h-7 text-[#2DD4BF] group-hover:rotate-45 transition-transform duration-500"
+            className="w-7 h-7 text-[#2DD4BF] group-hover:scale-110 transition-transform duration-300"
             viewBox="0 0 32 32"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            {/* Top-right leaf */}
+            {/* Top faceted diamond */}
             <path
-              d="M16 16L24 8H16V16Z"
-              fill="currentColor"
-              className="opacity-90"
+              d="M16 3L27 12L16 29L5 12L16 3Z"
+              stroke="currentColor"
+              strokeWidth="2.2"
+              strokeLinejoin="round"
             />
-            {/* Bottom-left leaf */}
+            {/* Inner facet lines */}
             <path
-              d="M16 16L8 24H16V16Z"
-              fill="currentColor"
-              className="opacity-90"
-            />
-            {/* Top-left angled wing */}
-            <path
-              d="M16 16L8 8V16H16Z"
-              fill="currentColor"
-              className="opacity-60"
-            />
-            {/* Bottom-right angled wing */}
-            <path
-              d="M16 16L24 24V16H16Z"
-              fill="currentColor"
+              d="M5 12H27M16 3V29M10 12L16 29L22 12"
+              stroke="currentColor"
+              strokeWidth="1.8"
+              strokeLinejoin="round"
               className="opacity-75"
             />
           </svg>
         </div>
 
         <span className="font-bold text-[19px] tracking-tight text-[#18181B]">
-          Pallet Ross
+          AuraArt
         </span>
       </div>
 

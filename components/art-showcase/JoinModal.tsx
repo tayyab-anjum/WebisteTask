@@ -41,7 +41,7 @@ export function JoinModal({ isOpen, onClose }: JoinModalProps) {
             </div>
 
             <h3 className="text-2xl font-bold text-neutral-900">
-              Join Pallet Ross Pro
+              Join AuraArt Pro
             </h3>
             <p className="text-sm text-neutral-500 mt-1">
               Showcase your portfolio, sell directly to global art collectors, and get featured.

@@ -93,7 +93,7 @@ export function HeroSection({
             transition={{ delay: 0.2, duration: 0.5 }}
             className="text-zinc-500 text-[15px] sm:text-[17px] font-normal leading-relaxed max-w-md mt-6 mb-8"
           >
-            Welcome to FinSuite, where financial management meets simplicity and efficiency.
+            Welcome to ApexVault, where financial management meets simplicity and efficiency.
           </motion.p>
 
           {/* Primary Action Button */}
