@@ -4,7 +4,6 @@ import React, { useState } from "react";
 import { Navbar } from "@/components/pricing-plans/Navbar";
 import { HeadlineSection } from "@/components/pricing-plans/HeadlineSection";
 import { PricingCards } from "@/components/pricing-plans/PricingCards";
-import { FaqSection } from "@/components/pricing-plans/FaqSection";
 import { Footer } from "@/components/pricing-plans/Footer";
 import {
   ScheduleCallModal,
@@ -41,9 +40,6 @@ export default function PricingPlansPage() {
           isAnnual={isAnnual}
           onSelectPlan={handleSelectPlan}
         />
-
-        {/* FAQ Accordion */}
-        <FaqSection />
       </main>
 
       {/* Footer */}

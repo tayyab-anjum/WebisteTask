@@ -13,7 +13,7 @@ export function PricingCards({ isAnnual, onSelectPlan }: PricingCardsProps) {
   const personalPrice = isAnnual ? "$55" : "$69";
 
   return (
-    <section className="w-full pb-24 sm:pb-32 relative z-10">
+    <section className="w-full pb-16 sm:pb-24 relative z-10">
       <div className="max-w-[1500px] mx-auto px-5 sm:px-8 lg:px-16">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 lg:gap-10 items-stretch">
           {/* CARD 1: FREE PLAN */}
@@ -25,15 +25,19 @@ export function PricingCards({ isAnnual, onSelectPlan }: PricingCardsProps) {
               <div className="flex items-center justify-between gap-3 sm:gap-4">
                 {/* 3D Black Squircle Icon + Name */}
                 <div className="flex items-center gap-3.5 sm:gap-4 min-w-0">
-                  <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-zinc-950 text-white flex items-center justify-center shadow-md border border-zinc-800 shrink-0">
-                    <svg viewBox="0 0 32 32" className="w-6 h-6 sm:w-7 sm:h-7">
+                  <motion.div
+                    whileHover={{ y: -3, scale: 1.05 }}
+                    transition={{ type: "spring", stiffness: 400, damping: 20 }}
+                    className="w-12 h-12 sm:w-14 sm:h-14 rounded-[20px] sm:rounded-[22px] bg-gradient-to-b from-[#343438] via-[#1E1E22] to-[#0A0A0C] text-white flex items-center justify-center shrink-0 border-t border-white/35 border-x border-white/10 border-b border-black shadow-[0_16px_28px_-6px_rgba(0,0,0,0.45),0_8px_16px_-4px_rgba(0,0,0,0.35),inset_0_1.5px_1px_rgba(255,255,255,0.4),inset_0_-2px_4px_rgba(0,0,0,0.6)] cursor-pointer"
+                  >
+                    <svg viewBox="0 0 32 32" className="w-6 h-6 sm:w-7 sm:h-7 drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)]">
                       {/* Solid White Rounded Diamond Tag */}
                       <rect
                         x="6"
                         y="6"
                         width="20"
                         height="20"
-                        rx="6"
+                        rx="5.5"
                         transform="rotate(45 16 16)"
                         fill="white"
                       />
@@ -50,7 +54,7 @@ export function PricingCards({ isAnnual, onSelectPlan }: PricingCardsProps) {
                       />
                       <circle cx="20.5" cy="16" r="1.4" fill="#09090B" />
                     </svg>
-                  </div>
+                  </motion.div>
                   <h3 className="text-2xl sm:text-3xl font-black text-zinc-950 tracking-tight truncate">
                     Free
                   </h3>
@@ -94,9 +98,13 @@ export function PricingCards({ isAnnual, onSelectPlan }: PricingCardsProps) {
               <div className="flex items-center justify-between gap-3 sm:gap-4">
                 {/* 3D Black Squircle Icon with Lightning Bolt + Name */}
                 <div className="flex items-center gap-3.5 sm:gap-4 min-w-0">
-                  <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-zinc-950 text-white flex items-center justify-center shadow-md border border-zinc-800 shrink-0">
-                    <Zap className="w-6 h-6 sm:w-7 sm:h-7 text-white fill-white" />
-                  </div>
+                  <motion.div
+                    whileHover={{ y: -3, scale: 1.05 }}
+                    transition={{ type: "spring", stiffness: 400, damping: 20 }}
+                    className="w-12 h-12 sm:w-14 sm:h-14 rounded-[20px] sm:rounded-[22px] bg-gradient-to-b from-[#343438] via-[#1E1E22] to-[#0A0A0C] text-white flex items-center justify-center shrink-0 border-t border-white/35 border-x border-white/10 border-b border-black shadow-[0_16px_28px_-6px_rgba(0,0,0,0.45),0_8px_16px_-4px_rgba(0,0,0,0.35),inset_0_1.5px_1px_rgba(255,255,255,0.4),inset_0_-2px_4px_rgba(0,0,0,0.6)] cursor-pointer"
+                  >
+                    <Zap className="w-6 h-6 sm:w-7 sm:h-7 text-white fill-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)]" />
+                  </motion.div>
                   <h3 className="text-2xl sm:text-3xl font-black text-zinc-950 tracking-tight truncate">
                     Personal
                   </h3>

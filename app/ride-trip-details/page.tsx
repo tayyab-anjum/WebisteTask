@@ -77,17 +77,17 @@ export default function RideTripDetailsPage() {
   };
 
   return (
-    <div className="min-h-screen bg-white text-[#18181B] antialiased flex flex-col selection:bg-neutral-900 selection:text-white">
+    <div className="h-dvh max-h-dvh overflow-hidden md:h-auto md:max-h-none md:min-h-screen md:overflow-visible bg-white text-[#18181B] antialiased flex flex-col selection:bg-neutral-900 selection:text-white">
       {/* Top Header / Navigation */}
       <Navbar onReset={handleReset} />
 
       {/* Main Website Wrapper */}
-      <div className="flex-1 w-full max-w-7xl mx-auto md:px-8 lg:px-12 md:py-8 flex flex-col justify-start">
+      <div className="flex-1 w-full max-w-7xl mx-auto px-4 sm:px-5 md:px-8 lg:px-12 md:py-8 flex flex-col justify-start min-h-0 overflow-y-auto md:overflow-visible">
         {/* Responsive Grid: Stacks on mobile, Side-by-side on Desktop */}
-        <div className="w-full grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-12 items-start">
+        <div className="w-full flex flex-col gap-2 sm:gap-3 md:grid md:grid-cols-12 md:gap-8 lg:gap-12 md:items-start">
           
           {/* LEFT COLUMN: Driver Card, Badges, Timeline, & Desktop Map */}
-          <div className="w-full md:col-span-7 lg:col-span-7 flex flex-col px-5 pt-1 md:px-0 md:pt-0">
+          <div className="w-full md:col-span-7 lg:col-span-7 flex flex-col md:px-0">
             {/* Driver Profile Card */}
             <DriverCard
               name="Lara Larsson"
@@ -112,9 +112,9 @@ export default function RideTripDetailsPage() {
             <LiveRouteMap />
           </div>
 
-          {/* RIGHT COLUMN: Vertically centered/aligned Fare Split Card, Set Reminder, & Action Buttons */}
-          <div className="w-full md:col-span-5 lg:col-span-5 flex flex-col px-5 pb-8 md:px-0 md:pb-0 md:pt-4 lg:pt-8 md:sticky md:top-20">
-            <div className="w-full bg-white md:border md:border-neutral-200/90 md:rounded-[32px] md:p-6 lg:p-7 md:shadow-[0_10px_35px_-12px_rgba(0,0,0,0.08)] flex flex-col">
+          {/* RIGHT COLUMN: Fare Split Card, Set Reminder, & Action Buttons */}
+          <div className="w-full md:col-span-5 lg:col-span-5 flex flex-col md:px-0 md:pt-4 lg:pt-8 md:sticky md:top-20">
+            <div className="w-full bg-white md:border md:border-neutral-200/90 md:rounded-[32px] md:p-6 lg:p-7 md:shadow-[0_10px_35px_-12px_rgba(0,0,0,0.08)] flex flex-col gap-1.5 sm:gap-2.5 md:gap-0">
               
               <div className="hidden md:flex items-center justify-between pb-4 border-b border-neutral-100 mb-5">
                 <span className="text-xs font-semibold text-neutral-400 uppercase tracking-wider">
@@ -146,13 +146,13 @@ export default function RideTripDetailsPage() {
               />
 
               {/* Mobile Home Indicator (Mobile only) */}
-              <div className="md:hidden w-36 h-[4.5px] bg-[#D1D5DB] rounded-full mx-auto mt-4 select-none" />
+              <div className="md:hidden w-32 h-1 bg-[#D1D5DB] rounded-full mx-auto mt-2.5 mb-1.5 select-none" />
 
               {/* Desktop Safety Shield Guarantee */}
               <div className="hidden md:flex items-center gap-3 mt-6 p-4 rounded-2xl bg-neutral-50 border border-neutral-200/70">
                 <ShieldCheck className="w-5 h-5 text-emerald-600 shrink-0" />
                 <p className="text-xs text-neutral-600 leading-normal">
-                  Protected by <strong>Drive Safety Shield</strong>. Every driver is verified with background checks and trips are monitored with live GPS tracking.
+                  Protected by <strong>Glide Safety Shield</strong>. Every driver is verified with background checks and trips are monitored with live GPS tracking.
                 </p>
               </div>
             </div>
@@ -160,9 +160,9 @@ export default function RideTripDetailsPage() {
         </div>
       </div>
 
-      {/* Footer */}
-      <footer className="mt-auto border-t border-neutral-100 py-6 text-center text-xs text-neutral-400">
-        <p>© 2026 Drive Inc. Frontend Prototype</p>
+      {/* Footer - Desktop Only */}
+      <footer className="hidden md:block mt-auto border-t border-neutral-100 py-6 text-center text-xs text-neutral-400">
+        <p>© 2026 Glide Inc. Frontend Prototype</p>
       </footer>
 
       {/* Calling Modal */}

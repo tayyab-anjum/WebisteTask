@@ -11,16 +11,17 @@ export function PhoneMockup() {
   return (
     <div className="relative w-full flex items-center justify-center select-none py-4">
       {/* Concentric Celestial Orbit Rings in Background */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[520px] h-[520px] sm:w-[720px] sm:h-[720px] lg:w-[920px] lg:h-[920px] rounded-full border border-zinc-200/60 pointer-events-none -z-10" />
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[720px] h-[720px] sm:w-[980px] sm:h-[980px] lg:w-[1250px] lg:h-[1250px] rounded-full border border-zinc-200/40 pointer-events-none -z-10" />
-      <div className="hidden lg:block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1500px] h-[1500px] rounded-full border border-zinc-200/25 pointer-events-none -z-10" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[560px] h-[560px] sm:w-[680px] sm:h-[680px] lg:w-[820px] lg:h-[820px] rounded-full border border-zinc-300/80 pointer-events-none z-0" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[840px] h-[840px] sm:w-[1040px] sm:h-[1040px] lg:w-[1240px] lg:h-[1240px] rounded-full border border-zinc-200 pointer-events-none z-0" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1140px] h-[1140px] sm:w-[1400px] sm:h-[1400px] lg:w-[1680px] lg:h-[1680px] rounded-full border border-zinc-200/70 pointer-events-none z-0" />
+      <div className="hidden sm:block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1500px] h-[1500px] lg:w-[2100px] lg:h-[2100px] rounded-full border border-zinc-200/50 pointer-events-none z-0" />
 
       {/* Realistic iPhone Device Container */}
       <motion.div
         initial={{ y: 25, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
-        className="relative"
+        className="relative z-10"
       >
         {/* Hardware Side Buttons - Left (Silent Switch + Volume Up + Volume Down) */}
         <div className="absolute -left-[5px] top-24 w-[5px] h-7 bg-zinc-300 rounded-l-sm" />

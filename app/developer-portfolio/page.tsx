@@ -3,8 +3,6 @@
 import React, { useState } from "react";
 import { Navbar } from "@/components/developer-portfolio/Navbar";
 import { HeroSection } from "@/components/developer-portfolio/HeroSection";
-import { FeaturesSection } from "@/components/developer-portfolio/FeaturesSection";
-import { Footer } from "@/components/developer-portfolio/Footer";
 import {
   GetStartedModal,
   ExperienceFutureModal,
@@ -17,29 +15,20 @@ export default function DeveloperPortfolioPage() {
   const [contactOpen, setContactOpen] = useState(false);
 
   return (
-    <div className="min-h-screen bg-white text-zinc-950 font-sans antialiased flex flex-col justify-between selection:bg-zinc-950 selection:text-white relative overflow-x-hidden">
+    <div className="min-h-screen lg:h-screen lg:max-h-screen lg:overflow-hidden bg-white text-zinc-950 font-sans antialiased flex flex-col justify-between selection:bg-zinc-950 selection:text-white relative overflow-x-hidden">
       {/* Top Navigation */}
       <Navbar
         onContactClick={() => setContactOpen(true)}
         onSignUpClick={() => setGetStartedOpen(true)}
       />
 
-      {/* Main Content */}
-      <main className="flex-1 w-full">
-        {/* Hero Section matching exact reference design */}
+      {/* Main Content: Single screen with Hero Section only */}
+      <main className="flex-1 w-full flex flex-col justify-center min-h-0">
         <HeroSection
           onGetStarted={() => setGetStartedOpen(true)}
           onExperienceFuture={() => setExperienceOpen(true)}
         />
-
-        {/* Developer First API & Architecture Features */}
-        <div id="features">
-          <FeaturesSection />
-        </div>
       </main>
-
-      {/* Footer */}
-      <Footer />
 
       {/* Modals */}
       <GetStartedModal

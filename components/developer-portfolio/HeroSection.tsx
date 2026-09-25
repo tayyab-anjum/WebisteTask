@@ -15,19 +15,19 @@ export function HeroSection({
   onExperienceFuture,
 }: HeroSectionProps) {
   return (
-    <section className="w-full pt-12 sm:pt-20 lg:pt-28 pb-20 sm:pb-28 overflow-hidden select-none">
-      <div className="max-w-[1500px] mx-auto px-6 sm:px-10 lg:px-16">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-14 items-center">
+    <section className="w-full flex-1 flex items-center justify-center py-4 sm:py-8 lg:py-4 overflow-hidden select-none">
+      <div className="max-w-[1500px] mx-auto px-6 sm:px-10 lg:px-16 w-full">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-14 items-center">
           {/* Left Column: Headline, CTAs, Partner Logos */}
           <div className="lg:col-span-7 flex flex-col items-start z-10">
             {/* Main Headline */}
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-[70px] xl:text-[78px] font-black text-zinc-950 tracking-[-0.04em] leading-[1.05]">
+            <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-[66px] xl:text-[74px] font-black text-zinc-950 tracking-[-0.04em] leading-[1.06]">
               API-based developer portfolio, <br />
               that converts.
             </h1>
 
             {/* Subheadline description */}
-            <p className="text-base sm:text-lg lg:text-xl text-zinc-500 font-normal leading-relaxed max-w-2xl mt-6 mb-10">
+            <p className="text-sm sm:text-base lg:text-lg text-zinc-500 font-normal leading-relaxed max-w-2xl mt-4 sm:mt-5 mb-6 sm:mb-8">
               Next-gen developer portfolio that helps you showcase your projects,
               skills, and experience. Personalize it by an evergrowing collection
               of building blocks and analyse your growth.
